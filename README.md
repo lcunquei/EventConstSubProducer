@@ -20,3 +20,19 @@ The procedure is similar to what is done in RecoJets/JetProducers/plugins/CSJetP
 
  
  In ALICE we found that Rmax~025 did not bias the jet pT for R=0.2 and R=0.4 jets. The optimal value needs to be tested and might not be the same for all jet R. 
+ 
+ 
+ ## Testing it
+ 
+ In order to test it, I downloaded JetToolBox: https://twiki.cern.ch/twiki/bin/viewauth/CMS/JetToolbox
+ and extended the configuration file to have this new ECS producer and jets. 
+ 
+ 
+
+ 
+ 
+  
+ 
+ 
+ 
+ 
