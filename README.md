@@ -3,7 +3,7 @@ if(!ecsUseEtaBandsRho_) the event subtraction proceeds using the default fastjet
 
 if(ecsUseEtaBandsRho_) the event subtraction proceeds using eta-dependent rho values 
 
-if(ecsUseTaBandsRho_&& ecsUseModulatedRho_) a flow-modulated rho is also used
+if(ecsUseTaBandsRho_&& ecsUseModulatedRho_) in addition, a flow-modulated rho is used
 
 EventConstSub producer is based on the SoftKiller template: it reads PF candidates, transforms them into fastjet pseudojets,performs
 the subtraction using the ConstituentSubtraction fastjet contrib package functions and then the subtracted list of particles is translated
