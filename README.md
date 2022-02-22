@@ -7,7 +7,7 @@ if(ecsUseTaBandsRho_&& ecsUseModulatedRho_) in addition, a flow-modulated rho is
 
 EventConstSub producer is based on the SoftKiller template: it reads PF candidates, transforms them into fastjet pseudojets,performs
 the subtraction using the ConstituentSubtraction fastjet contrib package functions and then the subtracted list of particles is translated
-back to the PF candidate format (makig sure that particles that were removed by the subtraction enter the list of PC candidates with E=0, to satisfy the value map)
+back to the PF candidate format (making sure that particles that were removed by the subtraction enter the list of PC candidates with E=0, to satisfy the value map)
 
 In order to modulate rho in terms of eta ranges and flow, I have to first distribute ghosts uniformly in the acceptance and then modify
 their 4-vectors according to their position, to finally call the subtraction using the list of input particles and list of modified ghosts. 
@@ -31,7 +31,11 @@ The procedure is similar to what is done in RecoJets/JetProducers/plugins/CSJetP
 ## Performance plots
  
  
+  ptres_differentsub.pdf:  shows that by construction jet-wise leads to residuals centered at zero. Event-wise subtraction with rmax=0.25 gets very close to the jet-wise residuals. rmax=0.8/0.1 lead to a biased residuals due to over/understimation. 
   
+  rg_differentsub.pdf: shows the excess of jet-wise secondary prongs at large angles. Event-wise subtraction reduces those with rmax=0.25. 
+  
+  angu_differentsub.pdf: complementary to the previous plot, it shows a strong enhancement of soft prongs with jet-wise subtraction, corresponding to the enhancement of large-angle prongs in the previous plot. Two things strike me here: first, it seems that the event-wise subtraction produces a tail in the high-z prongs. I never saw that before but perhaps I always looked to the rg while studying the performance of the subtraction. The second thing that strikes me is that the event-wise subtraction tail seems to be fluctuating. In angu_differentsub_nobands.pdf I show the zg distribution when rho is just default rho from fastjet, without a rapidity modulation.The distribution looks much smoother in this case, so this needs to be investigated. 
  
  
  
