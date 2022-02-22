@@ -35,7 +35,9 @@ The procedure is similar to what is done in RecoJets/JetProducers/plugins/CSJetP
   
   rg_differentsub.pdf: shows the excess of jet-wise secondary prongs at large angles. Event-wise subtraction reduces those with rmax=0.25. 
   
-  angu_differentsub.pdf: complementary to the previous plot, it shows a strong enhancement of soft prongs with jet-wise subtraction, corresponding to the enhancement of large-angle prongs in the previous plot. Two things strike me here: first, it seems that the event-wise subtraction produces a tail in the high-z prongs. I never saw that before but perhaps I always looked to the rg while studying the performance of the subtraction. The second thing that strikes me is that the event-wise subtraction tail seems to be fluctuating. In angu_differentsub_nobands.pdf I show the zg distribution when rho is just default rho from fastjet, without a rapidity modulation.The distribution looks much smoother in this case, so this needs to be investigated. 
+  angu_differentsub.pdf:shows very similar performance between event-wise rmax=0.25 and jet-wise subtraction. rmax=0.1 shows a strong enhancement of low-z prongs,which are complementary to the enhancement of large-angle prongs in the previous plot. 
+  
+  The impact of doing using a rho value that depends on eta is shown in the plots with title "nobands". In general, not being diferential in eta leads to an undersubtraction of bkg. 
  
  
  
