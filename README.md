@@ -36,7 +36,18 @@ The procedure is similar to what is done in RecoJets/JetProducers/plugins/CSJetP
  
   ![Here is the jet momentum bias as a function of centrality](https://github.com/lcunquei/EventConstSubProducer/tree/main/performance_plots/bias_differentsub.pdf)
   
+ The plots show the differences between the jet-based subtraction and the event-wise subtraction for 3 different rmax values. We see that even though the resolution improves for smaller rmax, then a significant undersubtraction of jet pT occurs. 
+ 
+ I am also including the resolution and bias for one example jet shape, the angularity:
+ 
+ 
+  ![Here is the jet angularity resolution as a function of centrality](https://github.com/lcunquei/EventConstSubProducer/tree/main/performance_plots/resolution_differentsub.pdf)
+ 
+  ![Here is the jet angularity bias as a function of centrality](https://github.com/lcunquei/EventConstSubProducer/tree/main/performance_plots/bias_differentsub.pdf)
   
+  
+  
+ 
   ptres_differentsub.pdf:  shows that by construction jet-wise leads to residuals centered at zero. Event-wise subtraction with rmax=0.25 gets very close to the jet-wise residuals. rmax=0.8/0.1 lead to a biased residuals due to over/understimation. 
   
   rg_differentsub.pdf: shows the excess of jet-wise secondary prongs at large angles. Event-wise subtraction reduces those with rmax=0.25. 
