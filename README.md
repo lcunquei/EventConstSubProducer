@@ -48,7 +48,7 @@ The procedure is similar to what is done in RecoJets/JetProducers/plugins/CSJetP
   
   The pT results are consitent with the findings of the subtraction method authors in pp simulations:
    [Performance plots in pp from author's paper](https://indico.cern.ch/event/649482/contributions/2993293/attachments/1687676/2714424/PeterBerta_CS_17.7.2018.pdf)
-   
+  In these slides the authors show that the optimal rmax depends on the jet R. I am currently testing different rmax with R=0.6 jets.  
    
    
   
