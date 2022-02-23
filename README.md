@@ -41,9 +41,9 @@ The procedure is similar to what is done in RecoJets/JetProducers/plugins/CSJetP
  I am also including the resolution and bias for one example jet shape, the angularity:
  
  
-  ![Here is the jet angularity resolution as a function of centrality](https://github.com/lcunquei/EventConstSubProducer/tree/main/performance_plots/resolution_differentsub.pdf)
+  ![Here is the jet angularity resolution as a function of centrality](https://github.com/lcunquei/EventConstSubProducer/tree/main/performance_plots/resolution_angularity_differentsub.pdf)
  
-  ![Here is the jet angularity bias as a function of centrality](https://github.com/lcunquei/EventConstSubProducer/tree/main/performance_plots/bias_differentsub.pdf)
+  ![Here is the jet angularity bias as a function of centrality](https://github.com/lcunquei/EventConstSubProducer/tree/main/performance_plots/bias_angularity_differentsub.pdf)
   
   
   The pT results are consitent with the findings of the subtraction method authors in pp simulations:
