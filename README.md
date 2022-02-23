@@ -40,5 +40,8 @@ The procedure is similar to what is done in RecoJets/JetProducers/plugins/CSJetP
   The impact of doing using a rho value that depends on eta is shown in the plots with title "nobands". In general, not being diferential in eta leads to an undersubtraction of bkg. 
  
  
+ [Performance plots in pp from author's paper](https://indico.cern.ch/event/649482/contributions/2993293/attachments/1687676/2714424/PeterBerta_CS_17.7.2018.pdf)
+ in slides 30,31, and 32 it is shown that there doesn't seem to be an optimal choice of Rmax for all jet R. Let's produce similar ptbias and resolution plots for PbPb as function of centrality: 
+ 
  
  
