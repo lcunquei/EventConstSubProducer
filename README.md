@@ -30,7 +30,7 @@ The procedure is similar to what is done in RecoJets/JetProducers/plugins/CSJetP
  
 ## Performance plots
  
- I've considered 5 centrality bins :[0,10,20,40,60,80]
+ I've considered 5 centrality bins :[0,10,20,40,60,80] and R=0.4 antikt jets. 
  
  ![Here is the jet momentum resolution as a function of centrality](https://github.com/lcunquei/EventConstSubProducer/tree/main/performance_plots/resolution_differentsub.pdf)
  
@@ -46,6 +46,11 @@ The procedure is similar to what is done in RecoJets/JetProducers/plugins/CSJetP
   ![Here is the jet angularity bias as a function of centrality](https://github.com/lcunquei/EventConstSubProducer/tree/main/performance_plots/bias_differentsub.pdf)
   
   
+  The pT results are consitent with the findings of the subtraction method authors in pp simulations:
+   [Performance plots in pp from author's paper](https://indico.cern.ch/event/649482/contributions/2993293/attachments/1687676/2714424/PeterBerta_CS_17.7.2018.pdf)
+   
+   
+   
   
  
   ptres_differentsub.pdf:  shows that by construction jet-wise leads to residuals centered at zero. Event-wise subtraction with rmax=0.25 gets very close to the jet-wise residuals. rmax=0.8/0.1 lead to a biased residuals due to over/understimation. 
@@ -57,8 +62,6 @@ The procedure is similar to what is done in RecoJets/JetProducers/plugins/CSJetP
   The impact of doing using a rho value that depends on eta is shown in the plots with title "nobands". In general, not being diferential in eta leads to an undersubtraction of bkg. 
  
  
- [Performance plots in pp from author's paper](https://indico.cern.ch/event/649482/contributions/2993293/attachments/1687676/2714424/PeterBerta_CS_17.7.2018.pdf)
- in slides 30,31, and 32 it is shown that there doesn't seem to be an optimal choice of Rmax for all jet R. Let's produce similar ptbias and resolution plots for PbPb as function of centrality: 
  
  
  
