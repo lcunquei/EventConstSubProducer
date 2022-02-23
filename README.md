@@ -36,7 +36,7 @@ The procedure is similar to what is done in RecoJets/JetProducers/plugins/CSJetP
  
   ![Here is the jet momentum bias as a function of centrality](https://github.com/lcunquei/EventConstSubProducer/tree/main/performance_plots/bias_differentsub.pdf)
   
- The plots show the differences between the jet-based subtraction and the event-wise subtraction for 3 different rmax values. We see that even though the resolution improves for smaller rmax, then a significant undersubtraction of jet pT occurs. 
+ The plots show the differences between the jet-based subtraction and the event-wise subtraction for 3 different rmax values. We see that even though the resolution improves for smaller rmax, then a significant undersubtraction of jet pT occurs. The important thing to note is that for rmax=0.25 we obtain zero bias just as with the jet-wise subtraction, but the jet momentum resolution improves significantly in the most central classes. 
  
  I am also including the resolution and bias for one example jet shape, the angularity:
  
