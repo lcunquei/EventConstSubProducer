@@ -52,6 +52,8 @@ The procedure is similar to what is done in RecoJets/JetProducers/plugins/CSJetP
    
    
   
+ Other more detailed plots showing the impact of the rho estimation in eta bands and the subtraction at the level of Rg and the impact on secondary prongs: 
+ 
  
   ptres_differentsub.pdf:  shows that by construction jet-wise leads to residuals centered at zero. Event-wise subtraction with rmax=0.25 gets very close to the jet-wise residuals. rmax=0.8/0.1 lead to a biased residuals due to over/understimation. 
   
