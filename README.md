@@ -30,25 +30,35 @@ The procedure is similar to what is done in RecoJets/JetProducers/plugins/CSJetP
  
 ## Performance plots
  
- I've considered 5 centrality bins :[0,10,20,40,60,80] and R=0.4 antikt jets. 
+ I've considered 5 centrality bins :[0,10,20,40,60,80] and R=0.4 and R=0.6 antikt jets. 
  
- ![Here is the jet momentum resolution as a function of centrality](https://github.com/lcunquei/EventConstSubProducer/tree/main/performance_plots/resolution_differentsub.pdf)
+ ![Here is the jet momentum resolution as a function of centrality for R=0.4 jets](https://github.com/lcunquei/EventConstSubProducer/tree/main/performance_plots/resolution_differentsub.pdf)
  
-  ![Here is the jet momentum bias as a function of centrality](https://github.com/lcunquei/EventConstSubProducer/tree/main/performance_plots/bias_differentsub.pdf)
+  ![Here is the jet momentum bias as a function of centrality for R=0.4](https://github.com/lcunquei/EventConstSubProducer/tree/main/performance_plots/bias_differentsub.pdf)
   
- The plots show the differences between the jet-based subtraction and the event-wise subtraction for 3 different rmax values. We see that even though the resolution improves for smaller rmax, then a significant undersubtraction of jet pT occurs. The important thing to note is that for rmax=0.25 we obtain zero bias just as with the jet-wise subtraction, but the jet momentum resolution improves significantly in the most central classes. 
+  
+   ![Here is the jet momentum resolution as a function of centrality for R=0.6 jets](https://github.com/lcunquei/EventConstSubProducer/tree/main/performance_plots/resolution_largeR_differentsub.pdf)
+ 
+  ![Here is the jet momentum bias as a function of centrality for R=0.6](https://github.com/lcunquei/EventConstSubProducer/tree/main/performance_plots/bias_largeR_differentsub.pdf)
+  
+  
+ The plots show the differences between the jet-based subtraction and the event-wise subtraction for 3 different rmax values. We see that even though the resolution improves for smaller rmax, then a significant undersubtraction of jet pT occurs. The important thing to note is that for R=0.4 jets, with rmax=0.25 we obtain zero bias just as with the jet-wise subtraction, but the jet momentum resolution improves significantly in the most central classes. 
+ 
+ For R=0.6, we see that the zero bias is achieved for higher choices of rmax~0.375. The rmax=0.25 leads to undercorrection. The resolution improves significantly with respect to jet-wise for rmax=0.375.  
+ 
+ The results are consitent with the findings of the subtraction method authors in pp simulations:
+   [Performance plots in pp from author's paper](https://indico.cern.ch/event/649482/contributions/2993293/attachments/1687676/2714424/PeterBerta_CS_17.7.2018.pdf)
  
  I am also including the resolution and bias for one example jet shape, the angularity:
  
  
-  ![Here is the jet angularity resolution as a function of centrality](https://github.com/lcunquei/EventConstSubProducer/tree/main/performance_plots/resolution_angularity_differentsub.pdf)
+  ![Here is the jet angularity resolution as a function of centrality for R=0.4 jets](https://github.com/lcunquei/EventConstSubProducer/tree/main/performance_plots/resolution_angularity_differentsub.pdf)
  
-  ![Here is the jet angularity bias as a function of centrality](https://github.com/lcunquei/EventConstSubProducer/tree/main/performance_plots/bias_angularity_differentsub.pdf)
+  ![Here is the jet angularity bias as a function of centrality for R=0.4 jets](https://github.com/lcunquei/EventConstSubProducer/tree/main/performance_plots/bias_angularity_differentsub.pdf)
   
   
-  The pT results are consitent with the findings of the subtraction method authors in pp simulations:
-   [Performance plots in pp from author's paper](https://indico.cern.ch/event/649482/contributions/2993293/attachments/1687676/2714424/PeterBerta_CS_17.7.2018.pdf)
-  In these slides the authors show that the optimal rmax depends on the jet R. I am currently testing different rmax with R=0.6 jets.  
+  
+    
    
    
   
